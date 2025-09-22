@@ -1,0 +1,21 @@
+services:
+  - type: worker
+    name: filestore-ultra
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: storage_id
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: ADMIN_CONTACT
+        sync: false
+      - key: CUSTOM_CAPTION
+        sync: false
